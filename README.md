@@ -1,1 +1,2 @@
-* add everything later
+Welcome to the Pokémon API project!
+

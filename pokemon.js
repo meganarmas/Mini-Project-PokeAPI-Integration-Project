@@ -1,25 +1,32 @@
-async function fetchPokemonData(pokemon){
+const apiURL = `https://pokeapi.co/api/v2/pokemon/${pokemon_name.toLowerCase()}`;
+
+
+async function fetchPokemonData() {
     const apiURL = `https://pokeapi.co/api/v2/pokemon/${pokemon_name.toLowerCase()}`;
     try {
-        const response = await fetch(apiURL);
-        if (!response.ok){
-            throw new Error(`Pokemon not found: ${response.statusText}`);
-        }
+        const response = await fetch(apiURL)
         const data = await response.json();
-        updatePokemonDetails(data);
-        catch (error) {
-            console.error('Fetch error:', error);
-            displayErrorMessage('Pokemon not found!');
-        }
+        return data.data.results;
+    } catch (error) {
+        console.log("Error", error)
     }
 }
 
-function displayPokemon(pokemon) {
-    const pokemonInfo = document.getElementById('pokemon-info');
-    pokemonInfo.innerHTML = `pass `
-};
+async function displayCharacters() {
+        pokemonData.innerHTML = `
+        <h4>${pokemon.name}</h4>
+        <img scr="${pokemon.sprites.front_default}" alt="${pokemon.name}"
+        <p>Abilities: ${pokemon.abilities}</p>
+        <p>Types: ${pokemon.type}</p>
+        <p>Stats: ${pokemon.stats}</p>;
+        `
+    };
 
 
+searchForm.addEventListener("submit", function {
+    const pokemonInput = document.getElementById("pokemon-name")
+    .ariaValueMax.toLowerCase();
+    fetchPokemonData("pokemon-name")
+}
 
-
-addEventListener(FormSubmission)
+) 

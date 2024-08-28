@@ -1,0 +1,63 @@
+body{
+    background-color: #ffebcd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-weight: 100;
+    text-align: center;
+    
+}
+
+nav{
+    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 16px;
+    padding: 5px;
+    text-align: center;
+}
+
+.navbar li{
+    margin: 0px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    transition: background-color 2.0s ease;
+}
+
+a:hover{
+    color: white;
+}
+
+a:active{
+    color: yellow;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 2px;
+    text-align: left;
+}
+
+.search:hover{
+    background-color: red;
+}
+
+.form-group {
+    background-color: white;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 25px
+}
