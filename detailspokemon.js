@@ -67,6 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="card-text">Abilities: ${pokemon.abilities.map(ability => ability.ability.name).join(', ')}</p>
                 <p class="card-text">Types: ${pokemon.types.map(type => type.type.name).join(',')}</p>
                 <p>Stats:</p>
+                <ul>
+                ${pokemon.stats.map(stat =>`<li>${stat.stat.name}: <${stat.base_stat}</li>`).join('')}
+                </ul>
                 <p>Evolutions:</p>
                 <ul>
                 ${evolutionChain.map(poke => `<li>${poke}</li>`).join('')}
