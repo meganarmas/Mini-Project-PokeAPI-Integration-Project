@@ -51,12 +51,19 @@ footer{
     text-align: left;
 }
 
-.search:hover{
+.btn:hover{
     background-color: red;
 }
 
 .form-group {
     background-color: white;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 25px
+}
+
+.card{
+    background: white;
     padding: 10px;
     margin: 0px;
     border-radius: 25px

@@ -22,27 +22,23 @@
                         <li>
                             <a class="nav-link" href="details.html">Pokémon Details</a>
                         </li>
-                        <li>
-                            <a class="nav-link" href="types.html">Pokémon Types</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="teambuilder.html">Pokémon Team Builder</a>
-                        </li>
                     </ul>
             </div>
     </nav>
 
-    <h1>Pokémon Search Engine</h1>
-    <p>Ready to start your Pokémon adventure? Let's go!</p>
-
-    <form id="pokemon-form">
-        <div class="form-group">
-            <label for="pokemon-name">Enter Pokémon's name:</label>
-            <input type="text" class="form-control" id="pokemon-name" placeholder="Enter pokemon name">
-            <button type="submit" class="search">Search</button>
-        <div id="pokemon-info" class="card"></div>
-        </div>
-    </form>
+    <div class="container search-container">
+        <h1>Pokémon Search Engine</h1>
+        <p>Ready to start your Pokémon adventure? Let's go!</p>
+        <form id="pokemon-form">
+            <div class="form-group">
+                <label for="pokemon-input">Enter Pokémon's name:</label>
+                <input type="text" class="form-control" id="pokemon-input" placeholder="Enter pokemon name:">
+            </div>
+            <button type="submit" class="btn">Search</button>
+            </form>
+        <div id="pokemon-info" class="pokemon-card"></div>
+    </div>
+    
 
 
 
