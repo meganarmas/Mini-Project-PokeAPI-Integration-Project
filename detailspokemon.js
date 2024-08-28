@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const pokemonInfo = document.getElementById('pokemon-info');
 
-    const pokemonList = ['oshawott', 'gengar'];
+    const pokemonList = ['oshawott', 'gengar', 'aipom', 'rotom'];
 
     const fetchPokemon = async (pokemonName) =>{
         const APIurl = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
