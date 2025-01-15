@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <h2 class="card-title">${pokemon.name}</h2>
                 <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
                 <p class="card-text">Abilities: ${pokemon.abilities.map(ability => ability.ability.name).join(', ')}</p>
-                <p class="card-text">Types: ${pokemon.types.map(type => type.type.name).join(',')}</p>
+                <p class="card-text">Types: ${pokemon.types.map(type => type.type.name).join(', ')}</p>
                 <p>Stats:</p>
                 <ul>
                 ${pokemon.stats.map(stat =>`<li>${stat.stat.name}: <${stat.base_stat}</li>`).join('')}
